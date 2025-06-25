@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR Scans & Labs</title>
+    <link href="images/logo-icon.png" rel="icon" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--  -->
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- style  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+  <body>
+  <div class="whats_pin">
+    <a href="https://wa.me/9043863855" target="_blank" target="_blank"><img src="images/whatsapp.png" alt="img"
+        style="z-index: 9;" /></a>
+  </div>
+
+  <div class="container-fluid sticky-top" id="navbar">
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img src="images/logo.png" alt="img" width="20%" />
+        <!-- Inside .container-fluid just after logo -->
+        <div class="d-flex align-items-center gap-3">
+          <a href="tel:+91 9043863855" class="text-dark fw-bold" style="text-decoration: none;">
+            <img src="images/call-bold.png" alt="Call" style="width: 30px;" />Call Us
+          </a>
+          <a href="https://wa.me/9043863855" target="_blank" class="text-dark fw-bold" style="text-decoration: none;">
+            <img src="images/whatsapp.png" alt="WhatsApp" style="width: 30px;" />Whatsapp
+          </a>
+        </div>
+
+        <button class="navbar-toggler" style="border: none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="service.html">Service</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-bold" href="scan.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Imaging modality
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item fw-bold" href="scan.html">1.5 TMR SCAN</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="scan_96slice.html">96 SLICE SIEMENS CT SCAN</a>
+                </li>
+                <li><a class="dropdown-item fw-bold" href="scan_ultra.html">ULTRASOUND SCAN</a></li>
+                <li><a class="dropdown-item fw-bold" href="scan_doppler.html">COLOUR DOPPLER</a></li>
+                <li><a class="dropdown-item fw-bold" href="scan_digital.html">DIGITAL X-RAY</a></li>
+                <li><a class="dropdown-item fw-bold" href="scan_ecg.html">ECHO/ECG/TMT</a></li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="scan_eeg.html">EEG/NCS/PFT/SLEEP STUDY</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="scan_lab.html">CLINICAL LABORATORY</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="health_package.html">MHC/HEALTH PACKAGE</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-bold" href="vr_master.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Package
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <li><a class="dropdown-item fw-bold" href="vr_master.html">VR-MASTER</a></li>
+                <li><a class="dropdown-item fw-bold" href="vr_master_plus.html">VR-MASTER PLUS</a></li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="vr-diabetic.html">VR DIABETIC CARE</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="vr_wellness.html">VR WOMEN WELLNESS</a>
+                </li>
+                <li><a class="dropdown-item fw-bold" href="vr_cardiac.html">VR CARDIAC CARE </a></li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="vr_screening.html">VR CANCER SCREENING</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="contact.html">Contact</a>
+            </li>
+
+            <!-- <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li> -->
+          </ul>
+          <button class="p-2 appointment fw-bold" type="button" data-bs-toggle="modal"
+            data-bs-target="#appointmentModal">
+            Appointment
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- mob navbar  -->
+  <div class="container-fluid" id="mobnav">
+    <div class="row justify-content-center mt-2">
+      <div class="col-auto">
+        <a href="tel:+91 9043863855" class="text-dark" style="text-decoration: none;">
+          <img src="images/call-bold.png" alt="Call" style="width: 40px;" />Call Us
+        </a>
+      </div>
+      <div class="col-auto">
+        <a href="https://wa.me/9043863855" class="text-dark" style="text-decoration: none;">
+          <img src="images/whatsapp.png" alt="WhatsApp" style="width: 40px;" />Whatsapp
+        </a>
+      </div>
+    </div>
+
+
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid text-center">
+        <img src="images/logo.png" alt="img" width="20%" />
+        <button class="p-2 appointment" type="button" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+          Appointment
+        </button>
+
+        <button class="navbar-toggler" style="border: none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Service</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="scan.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Imaging modality
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="scan.html">Advanced MRI SCAN</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="scan_96slice.html">96 SLICE SIEMENS CT SCAN</a>
+                </li>
+                <li><a class="dropdown-item" href="scan_ultra.html">ULTRASOUND SCAN</a></li>
+                <li><a class="dropdown-item" href="scan_doppler.html">COLOUR DOPPLER</a></li>
+                <li><a class="dropdown-item" href="scan_digital.html">DIGITAL X-RAY</a></li>
+                <li><a class="dropdown-item" href="scan_ecg.html">ECHO/ECG/TMT</a></li>
+                <li>
+                  <a class="dropdown-item" href="scan_eeg.html">EEG/NCS/PFT/SLEEP STUDY</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="scan_lab.html">CLINICAL LABORATORY</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="health_package.html">MHC/HEALTH PACKAGE</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Package
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="vr_master.html">VR-Master</a></li>
+                <li><a class="dropdown-item" href="vr_master_plus.html">VR-Master Plus</a></li>
+                <li>
+                  <a class="dropdown-item" href="vr-diabetic.html">VR Diabetic Care</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="vr_wellness.html">VR Women Wellness</a>
+                </li>
+                <li><a class="dropdown-item" href="vr_cardiac.html">VR Cardiac Care</a></li>
+                <li>
+                  <a class="dropdown-item" href="vr_screening.html">VR cancer Screening</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <!-- carousel -->
+   
+    <!-- end -->
+    <div class="banner d-flex align-items-end">
+      <img src="images/mri-banner.jpeg" alt="img" />
+    </div>
+
+
+
+<!--MRI About-->
+
+ <div class="container mt-5" id="about">
+        <div class="main">
+            <h2 class="wow fadeInUp">1.5 TMR Scan</h2>
+            <img src="images/divider.png" alt="img" width="20%">
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mt-3 wow fadeInLeft">
+                <div class="">
+                    <img src="images/blog3.jpeg" alt="img" width="100%">
+                </div>
+            </div>
+            <div class="col-lg-6 para mt-5 wow fadeInRight">
+                <p>At VRScan, we offer 1.5 TMR Scan using cutting-edge technology to provide detailed and accurate imaging of internal organs, tissues, and structures. Whether for neurological, orthopedic, or full-body scans, our state-of-the-art MRI system ensures high-resolution images for precise diagnosis and treatment planning.
+                  Magnetic Resonance Imaging (MRI) is a state-of-the-art, noninvasive technology that provides detailed visualization of the body's organs, tissues, and skeletal system.
+                  At VR Scan, our MRI unit captures high-precision images of any body part from multiple angles and planes with exceptional clarity. Our advanced MRI techniques are completely safe, utilizing no ionizing radiation and posing no biological hazards, ensuring a risk-free imaging experience
+                  Our non-invasive MRI scan provides high-resolution isotropic 3D images with exceptional soft-tissue contrast. VR Scan is the trusted choice for doctors and patients, offering clear, detailed, and dynamic imaging of the human body for accurate diagnosis.
+                  We offer a wide range of diagnostic services, including X-rays, Ultrasound, Doppler, CT scans, lab tests and many more. Our team of experts are committed to providing you with accurate and reliable results as quickly as possible.
+                
+                </b>
+                </p>
+            </div>
+        </div>
+</div>
+
+<!--endabout-->
+
+<!-- Who need MRi scan-->
+
+  <div class="container">
+        <div class="main pt-4 wow fadeInUp">
+            <h2>Why Choose Our 1.5 TMR Scan?</h2>
+            <img src="images/divider.png" alt="img" width="20%">
+        </div>
+        <p class="text-center mt-4 wow fadeInUp">Choosing an 1.5 TMR Scan can offer several benefits depending on your medical needs. Here are some reasons why you might consider opting for an 1.5 TMR Scan:</p>
+        <div class="row">
+            <div class="col-lg-6 wow fadeInLeft">
+                <div class="">
+
+                    <h5>
+                     <img src="images/valuechoose/ser2.png" alt="" width="12%"> 
+                      Higher Resolution Images</h5>
+                    <p>1.5 TMR Scan machines often provide higher resolution images, which can help in detecting smaller or more subtle abnormalities that might be missed by standard MRI machines.</p>
+                </div>
+                <!-- <div class="">
+                    <h5>
+                      <img src="images/valuechoose/cho2.png" alt="" width="12%"> 
+                      Faster Scanning Times</h5>
+                    <p>Some advanced MRI machines have faster scanning capabilities, reducing the time you need to spend in the machine. This can be particularly beneficial for patients who may feel anxious or claustrophobic.</p>
+                </div> -->
+                <div class="">
+                    <h5>
+                       <img src="images/valuechoose/spinmri.png" alt="" width="12%">
+                       1.5 Tesla Available</h5>
+                    <p>Our 1.5 Tesla delivers ultra-high-resolution imaging for enhanced clarity and precision. With twice the magnetic strength of standard MRI, it provides faster scans and sharper details.</p>
+                </div>
+                <div class="">
+                    <h5>
+                      <img src="images/valuechoose/ser1.png" alt="" width="12%"> 
+                      Non-Invasive and Safe:</h5>
+                    <p>MRI scans do not use ionizing radiation, making them a safer option compared to CT scans or X-rays, especially for patients who require multiple imaging sessions.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-5 wow fadeInRight">
+                <img src="images/mri.jpg" alt="img" width="100%">
+            </div>
+        </div>
+    </div>
+
+
+    <!--end-->
+    <!--mri services-->
+
+
+     <div class="container testing">
+      
+        
+        <div class="main my-5 wow fadeInUp">
+            <h2>OUR MRI SERVICES</h2>
+            <img src="images/divider.png" alt="img" width="20%">
+            <p class="mt-3">We offer comprehensive MRI services, including brain, spine, musculoskeletal, cardiac, and full-body scans. Our advanced imaging technology ensures high-resolution, accurate diagnostics for various medical conditions. Experience safe, fast, and precise MRI scans with expert analysis.
+            </p>
+        </div>
+        <div class=" row wow fadeInUp">
+            <div class="col-lg-3 mt-2">
+                <div class="valuecard">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/valuechoose/brain.png" alt="" width="20%">
+                    </div>
+                    <h5> Brain MRI</h5>
+                    <p>A brain MRI provides detailed images of the brain's structure, helping diagnose conditions like tumors, strokes, or neurological disorders
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-2">
+                <div class="valuecard">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/valuechoose/spinnrii.png" alt="" width="20%">
+                    </div>
+                    <h5>Spine MRI </h5>
+                    <p>A spine MRI offers detailed images of the spinal cord, vertebrae, and surrounding tissues, aiding in diagnosing issues like herniated discs, spinal stenosis, or injuries.
+                        
+                    </p>
+                </div>
+            </div>
+              <div class="col-lg-3 mt-2">
+                <div class="valuecard">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/valuechoose/mu.png" alt="" width="20%">
+                    </div>
+                    <h5>Epilepsy MRI</h5>
+                    <p>A musculoskeletal MRI provides detailed images of bones, joints, muscles, and soft tissues, helping diagnose injuries, arthritis, or sports-related conditions.
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-2">
+                <div class="valuecard">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/valuechoose/cardiac.png" alt="" width="20%">
+                    </div>
+                    <h5>Joint MRI</h5>
+                    <p>A cardiac MRI provides detailed, non-invasive imaging of the heart's structure, function, and blood flow, aiding in the diagnosis and management of heart conditions.
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mt-5">
+              <div class="valuecard">
+                  <div class="d-flex justify-content-center">
+                      <img src="images/ser-dia/two.png" alt="" width="20%">
+                  </div>
+                  <h5>Angiogram MRI</h5>
+                  <p>MRI Angiogram is a safe, non-invasive imaging test that provides highly detailed images of blood vessels using magnetic fields and radio waves.
+                      
+                  </p>
+              </div>
+          </div>
+         
+        <div class="col-lg-3 mt-5">
+          <div class="valuecard">
+              <div class="d-flex justify-content-center">
+                  <img src="images/ser-dia/eight.png" alt="" width="20%">
+              </div>
+              <h5>Spectroscopy MRI</h5>
+              <p>It helps detect abnormalities at a molecular level, providing crucial insights into brain disorders, tumors, metabolic diseases, and more.
+                  
+              </p>
+          </div>
+      </div>
+      <div class="col-lg-3 mt-5">
+        <div class="valuecard">
+            <div class="d-flex justify-content-center">
+                <img src="images/valuechoose/ser2.png" alt="" width="20%">
+            </div>
+            <h5>Stroke Protocol MRI</h5>
+            <p>A Stroke Protocol MRI is a specialized imaging test designed to detect, evaluate, and manage stroke-related conditions quickly and accurately.
+                
+            </p>
+        </div>
+    </div>
+
+     <div class="col-lg-3 mt-5">
+                <div class="valuecard">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/ser-dia/one.png" alt="" width="20%">
+                    </div>
+                    <h5>Cardiac MRI</h5>
+                    <p>A Cardiac MRI is an advanced imaging test that provides detailed, high-resolution images of the heart and blood vessels.
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row wow fadeInUp">
+            <div class="col-lg-4 mt-2">
+                <div class="valuecard">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/valuechoose/val3.png" alt="" width="20%">
+                    </div>
+                    <h5>Musculoskeletal MRI</h5>
+                    <p>We believe in honesty, transparency, and ethical behaviour in all that we do. We consistently
+                        prioritize integrity and take responsibility for our actions.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-2">
+                <div class="valuecard">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/valuechoose/val4.png" alt="" width="20%">
+                    </div>
+                    <h5>Cardiac MRI</h5>
+                    <p>We believe that working together is essential to providing the best possible care to our
+                        patients. We foster a collaborative environment where our staff work together to provide
+                        comprehensive care to our patients.
+                    </p>
+                </div>
+            </div>
+             <div class="col-lg-4 mt-2">
+                <div class="valuecard">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/valuechoose/val4.png" alt="" width="20%">
+                    </div>
+                    <h5>Cardiac MRI</h5>
+                    <p>We believe that working together is essential to providing the best possible care to our
+                        patients. We foster a collaborative environment where our staff work together to provide
+                        comprehensive care to our patients.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+    
+        <br>
+     
+    </div>
+
+
+
+    <!--service end section-->
+
+    <!--frequently asked question start-->
+<!-- FAQ 3 - Bootstrap Brain Component -->
+<section class="bsb-faq-3 py-3 py-md-5 py-xl-8">
+  <div class="container">
+    <div class="main my-5 wow fadeInUp">
+            <h2>FREQUENTLY ASKED QUESTIONS</h2>
+            <img src="images/divider.png" alt="img" width="20%">
+          
+        </div>
+ 
+  </div>
+
+  <!-- FAQs: My Account -->
+  <div class="mb-8">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        <div class="col-12 col-xl-10">
+          <div class="accordion accordion-flush" id="faqAccount">
+            <div class="accordion-item bg-transparent border-top border-bottom py-3">
+              <h2 class="accordion-header" id="faqAccountHeading1">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse1" aria-expanded="false" aria-controls="faqAccountCollapse1">
+                 What is MRI scan?
+                </button>
+              </h2>
+              <div id="faqAccountCollapse1" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading1">
+                <div class="accordion-body">
+                  <p>An MRI (Magnetic Resonance Imaging) scan is a non-invasive imaging technique that uses magnetic fields and radio waves to create detailed images of organs, tissues, and structures inside the body.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqAccountHeading2">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse2" aria-expanded="false" aria-controls="faqAccountCollapse2">
+                  Will I hear noise during the scan?
+                </button>
+              </h2>
+              <div id="faqAccountCollapse2" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading2">
+                <div class="accordion-body">
+                  <p>Yes, MRI machines produce loud knocking or buzzing sounds. You'll be provided with earplugs or headphones to minimize the noise.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqAccountHeading3">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse3" aria-expanded="false" aria-controls="faqAccountCollapse3">
+                 Can children have MRI scan?
+                </button>
+              </h2>
+              <div id="faqAccountCollapse3" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading3">
+                <div class="accordion-body">
+                  <p>Yes, children can have MRI scans. In some cases, sedation may be used to help them stay still during the procedure.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqAccountHeading4">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse4" aria-expanded="false" aria-controls="faqAccountCollapse4">
+                How long does MRI scan take?
+                </button>
+              </h2>
+              <div id="faqAccountCollapse4" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading4">
+                <div class="accordion-body">
+                  <p>The duration of MRI scan depends on the area being examined and the type of imaging required. Typically, an MRI scan takes 15 to 60 minutes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqAccountHeading5">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse5" aria-expanded="false" aria-controls="faqAccountCollapse5">
+                  Can I get MRI if I am pregnant?
+                </button>
+              </h2>
+              <div id="faqAccountCollapse5" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading5">
+                <div class="accordion-body">
+                  <p>MRI scans are generally considered safe during pregnancy, especially after the first trimester, as they do not use ionizing radiation. However, MRI is typically recommended only if the benefits outweigh the risks and if other imaging methods (like ultrasound) cannot provide the necessary information</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  
+
+</section>
+
+
+    <!--faq end-->
+
+
+
+
+    <!-- footer area start  -->
+    <br />
+    <br />
+    <div class="container-fluid footer wow fadeInUp">
+      <div class="row">
+        <div class="col-lg-4 p-3 foot">
+          <div class="d-flex justify-content-center"></div>
+          <!-- <h4>Get In Touch</h4> -->
+          <img src="images/logo.png" alt="img" width="40%" />
+          <a href="https://maps.app.goo.gl/6dFxrkNZKg1A9maeA" target="_blank">
+            <p class="mt-2">
+              No.57 PKM TOWERS (ground floor) Ayyappa Nagar Extension, 200 Feet
+              road, opposite to DRJ Hospital, Kolathur, Chennai, Tamil Nadu
+              600099
+            </p>
+          </a>
+          <!-- <p class="text-justify mt-2">Looking for accurate and reliable scan and lab services? Look no further!
+                    Our state-of-the-art facility offers a wide range of services, from routine blood tests to complex
+                    imaging scans. Make an appointment now to see the difference for yourself!
+                </p> -->
+          <div class="footnum">
+            <h6><a href="tel:+91 9043943744">+91 9043943744</a></h6>
+            <h6><a href="tel:+91 9043863855">+91 9043863855</a></h6>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 text-justify p-3 foot">
+          <h4>Quick Links</h4>
+          <a href="index.html">
+            <p><i class="fa-solid fa-circle-dot"></i> Home</p>
+          </a>
+          <a href="service.html">
+            <p><i class="fa-solid fa-circle-dot"></i> Service</p>
+          </a>
+          <a href="gallery.html">
+            <p><i class="fa-solid fa-circle-dot"></i> Gallery</p>
+          </a>
+          <a href="contact.html">
+            <p><i class="fa-solid fa-circle-dot"></i> Contact</p>
+          </a>
+        </div>
+        <div class="col-lg-4 p-3 foot">
+          <h4>FOLLOW US</h4>
+          <ul>
+            <a
+              href="https://www.facebook.com/vrscansandlabs?mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <li><i class="fa-brands fa-facebook"></i> VR Scans And Labs</li>
+            </a>
+            <a
+              href="https://www.instagram.com/vr_scans_and_labs?igsh=YzU1c2U2NDAxODVu"
+              target="_blank"
+            >
+              <li><i class="fa-brands fa-instagram"></i> vr_scans_and_labs</li>
+            </a>
+            <!-- <a href="">
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                    </a> -->
+            <a
+              href="https://www.google.com/search?kgmid=/g/11krypw592&hl=en-IN&q=VR+SCANS+AND+LABS&kgs=bbae3eb32a9e74f9&shndl=30&shem=lose&source=sh/x/kp/osrp/m5/2"
+              target="_blank"
+            >
+              <li><i class="fa-brands fa-google"></i> VR SCANS AND LABS</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- footer area end  -->
+
+    <!-- Appointment Modal -->
+    <div
+      class="modal fade"
+      id="appointmentModal"
+      tabindex="-1"
+      aria-labelledby="appointmentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="appointmentModalLabel">
+              Book an Appointment
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter your Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Enter your Number"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="age"
+                      placeholder="Enter your Age"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="number" class="form-label">Gender</label>
+                    <select class="form-select" id="gender" required>
+                      <option disabled selected>Select Gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="study" class="form-label">Study</label>
+                    <input type="text" class="form-control" id="study" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="doctor" class="form-label"
+                      >Preferred Doctor</label
+                    >
+                    <input type="text" class="form-control" id="doctor" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="date" class="form-label">Preferred Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="time" class="form-label">Preferred Time</label>
+                    <input
+                      type="time"
+                      class="form-control"
+                      id="time"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                class="btn"
+                style="background-color: #d01119; color: white"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/19a2f72258.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      // Booking Appointment
+      document
+        .querySelector("#app-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Collect form values
+          const name = document.getElementById("name").value;
+          const phone = document.getElementById("phone").value;
+          const age = document.getElementById("age").value;
+          const gender = document.getElementById("gender").value;
+          const study = document.getElementById("study").value;
+          const doctor = document.getElementById("doctor").value;
+          const date = document.getElementById("date").value;
+          const time = document.getElementById("time").value;
+
+          // Create the message
+          const message = `Hello, I would like to book an appointment.\n\nDetails:\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nGender: ${gender}\nStudy: ${study}\nDoctor: ${doctor}\nDate: ${date}\nTime: ${time}`;
+
+          // WhatsApp API link with the message and phone number
+          const whatsappUrl = `https://wa.me/9043863855?text=${encodeURIComponent(
+            message
+          )}`;
+
+          // Open WhatsApp with pre-filled message
+          window.open(whatsappUrl, "_blank");
+        });
+    </script>
+  </body>
+</html>

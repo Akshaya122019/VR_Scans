@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Owl Carousel with Side Arrows</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <!-- jQuery and Owl Carousel JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+    }
+
+    .package-wrapper {
+      position: relative;
+      max-width: 1100px;
+      margin: 50px auto;
+    }
+
+    .owl-carousel .item {
+      padding: 10px;
+    }
+
+    .package-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .package-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .package-card .card-body {
+      padding: 15px;
+    }
+
+    .package-card .card-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    .package-card .card-text {
+      font-size: 0.9rem;
+    }
+
+    .package-more {
+      font-size: 0.85rem;
+      margin-top: 10px;
+    }
+
+    /* Custom Nav Buttons - Positioned on Left and Right */
+    .pack-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .custom-prev {
+      left: -25px;
+    }
+
+    .custom-next {
+      right: -25px;
+    }
+
+    .pack-nav:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .custom-prev, .custom-next {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+.carousel-caption a {
+  background-color: #00c851;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.carousel-caption a:hover {
+  background-color: #007e33;
+}
+<div class="carousel-wrapper package-wrapper">
+  <!-- Custom Left/Right Buttons -->
+  <button class="custom-nav-btn custom-prev pack-nav">‹</button>
+  <button class="custom-nav-btn custom-next pack-nav">›</button>
+
+  <!-- Carousel -->
+  <div class="owl-carousel owl-theme">
+    <!-- Slide 1 -->
+    <div class="item">
+      <div class="card package-card">
+        <img src="https://via.placeholder.com/300x150?text=Kuala+Lumpur" alt="Kuala Lumpur">
+        <div class="card-body">
+          <h5 class="card-title">Kuala Lumpur</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <a href="#" class="btn btn-primary btn-sm package-more">More &gt;</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="item">
+      <div class="card package-card">
+        <img src="https://via.placeholder.com/300x150?text=Agra" alt="Agra">
+        <div class="card-body">
+          <h5 class="card-title">Agra</h5>
+          <p class="card-text">Vivamus fermentum in arcu.</p>
+          <a href="#" class="btn btn-primary btn-sm package-more">More &gt;</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="item">
+      <div class="card package-card">
+        <img src="https://via.placeholder.com/300x150?text=Dubai" alt="Dubai">
+        <div class="card-body">
+          <h5 class="card-title">Dubai</h5>
+          <p class="card-text">Convallis eget pretium.</p>
+          <a href="#" class="btn btn-primary btn-sm package-more">More &gt;</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 4 -->
+    <div class="item">
+      <div class="card package-card">
+        <img src="https://via.placeholder.com/300x150?text=Tokyo" alt="Tokyo">
+        <div class="card-body">
+          <h5 class="card-title">Tokyo</h5>
+          <p class="card-text">Facilisis laoreet justo.</p>
+          <a href="#" class="btn btn-primary btn-sm package-more">More &gt;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      loop: true,
+      margin: 15,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      nav: false, // native nav disabled
+      dots: false,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        992: { items: 3 }
+      }
+    });
+
+    $('.custom-next').click(function() {
+      owl.trigger('next.owl.carousel');
+    });
+
+    $('.custom-prev').click(function() {
+      owl.trigger('prev.owl.carousel');
+    });
+  });
+</script>
+
+</body>
+</html>
