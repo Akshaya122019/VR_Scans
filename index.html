@@ -21,19 +21,206 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-
-
-
   <!-- style  -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/animate.css" />
+
+  <style>
+    .healthcare-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .healthcare-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 300px;
+      height: 300px;
+      background: linear-gradient(45deg, #ff6b6b20, #4ecdc420);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .healthcare-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .feature-title {
+      margin-bottom: 25px;
+    }
+
+    .feature-title span {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #2c3e50;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .feature-title p {
+      color: #7f8c8d;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    /* List */
+    /* Demo styling */
+    .demo-section {
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+    }
+
+    .demo-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    /* Option 1: Check Circle Icons */
+    .list-check {
+      list-style: none;
+      padding: 0;
+    }
+
+    .list-check li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 8px;
+      color: #2c3e50;
+      font-weight: 600;
+    }
+
+    .list-check li::before {
+      content: '\f058';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: #d01119;
+      font-size: 1.1rem;
+    }
+
+    .cta-button {
+      background: linear-gradient(85deg, #182e76, #d01119);
+      border: none;
+      padding: 15px 35px;
+      border-radius: 50px;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(243, 156, 18, 0.3);
+      margin: 25px 0 40px 0;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(243, 156, 18, 0.4);
+      background: linear-gradient(45deg, #d01119, #182e76);
+    }
+
+
+    /* Floating Elements */
+    .floating-icon {
+      position: absolute;
+      z-index: 3;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .floating-icon.icon-1 {
+      top: 20%;
+      right: 8%;
+      color: #3498db;
+      animation-delay: -0.5s;
+    }
+
+    .floating-icon.icon-2 {
+      bottom: 30%;
+      right: 5%;
+      color: #e74c3c;
+      animation-delay: -1s;
+    }
+
+    .floating-icon.icon-3 {
+      top: 50%;
+      right: 10%;
+      color: #2ecc71;
+      animation-delay: -1.5s;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 991.98px) {
+      .cta-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .healthcare-section {
+        padding: 50px 0;
+      }
+
+      .feature-title span {
+        font-size: 1.8rem;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
   <div class="whats_pin">
     <a href="https://wa.me/9043863855" target="_blank" target="_blank"><img src="images/whatsapp.png" alt="img"
         style="z-index: 9;" /></a>
+  </div>
+  <!-- Floating Buttons -->
+  <div class="floating-wrapper">
+    <!-- Call Now -->
+    <div class="floating-btn">
+      <a href="tel:+917799718099">
+        <div class="icon-circle">
+          <img src="images/call-bold.png" alt="Call">
+        </div>
+        <div class="label-box">
+          Call Now
+        </div>
+      </a>
+    </div>
+
+    <!-- Book Home Collection -->
+    <div class="floating-btn">
+      <a href="#homeCollectionForm">
+        <div class="icon-circle">
+          <img src="images/delivery-scooter.jpg" alt="Home Collection">
+        </div>
+        <div class="label-box">
+          Book Home Collection
+        </div>
+      </a>
+    </div>
   </div>
 
   <div class="container-fluid sticky-top" id="navbar">
@@ -238,6 +425,12 @@
       </div>
     </nav>
   </div>
+  <div class="container-fluid m-0 p-0">
+    <div class="strip-banner-sct">
+      <a href=""><img src="images/new/appointment.jpg" alt="Appointment Banner"></a>
+    </div>
+  </div>
+
 
   <!-- Home Start -->
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -288,18 +481,15 @@
   <!-- Home End -->
 
 
-
   <!-- banner part end  -->
   <br>
-
-
   <div class="container testing">
     <div class="main mt-5 mb-3">
       <h2 class="wow fadeInUp">YOUR PARTNER FOR RELIABLE HEALTH TESTING.</h2>
       <img src="images/divider.png" alt="img" width="20%">
     </div>
     <div class="row">
-      <div class="col-md-6 wow fadeInUp">
+      <div class="col-md-6 wow fadeInUp lh-lg">
         <P>Welcome to <b>VR Scans & Labs,</b></P>
         <p>We provide high-quality diagnostic services to help us take control of your health. Our experienced facility
           is equipped with cutting-edge technology diagnostic machines and staffed by experienced professionals who
@@ -326,54 +516,358 @@
       </div>
     </div>
 
-    <!-- Home Service Start -->
-    <div class="main mt-5 mb-3">
-      <h2 class="wow fadeInUp">OUR SERVICES</h2>
-      <img src="images/divider.png" alt="img" width="20%">
+  </div>
+
+  <!-- Service Start -->
+  <div class="container portfolio-area" id="service">
+    <div class="main my-3">
+      <h2>DIAGNOSTIC SERVICES</h2>
+      <img src="images/divider.png" alt="img" width="20%" />
     </div>
-    <div class="row wow fadeInUp">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-2 col-md-6 col-sm-6 mt-3">
-        <a href="scan.html" class="service_card text-black" style="text-decoration: none;">
-          <div class="servicebox">
-            <img src="images/home/one.png" alt="img" width="60%" />
-            <p>ADVANCED MRI SCAN</p>
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-4">
+        <a href="appointment.html" target="_blank">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/health-ser1.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>Ultrasound Screening</h3>
+            </div>
           </div>
         </a>
       </div>
-      <div class="col-lg-2 col-md-6 col-sm-6 mt-3">
-        <div class="servicebox">
-          <img src="images/home/two.png" alt="img" width="60%" />
-          <p>96 SLICE SIEMENS CT SCAN</p>
-        </div>
+      <div class="col-lg-4 col-md-4">
+        <a href="appointment.html" target="_blank">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/health-ser2.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>Digital X-RAY Screening</h3>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-lg-2 col-md-6 col-sm-6 mt-3">
-        <div class="servicebox">
-          <img src="images/home/three.png" alt="img" width="60%" />
-          <p>ULTRASOUND SCAN</p>
-        </div>
+      <div class="col-lg-4 col-md-4">
+        <a href="appointment.html" target="_blank">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/health-ser3.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>CT Scan Screening</h3>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-lg-2 col-md-6 col-sm-6 mt-3">
-        <div class="servicebox">
-          <img src="images/home/five.png" alt="img" width="60%" />
-          <p>COLOUR DOPPLER</p>
-        </div>
+      <div class="col-lg-4 col-md-4">
+        <a href="appointment.html" target="_blank">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/health-ser4.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>MRI Screening</h3>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-lg-2 col-md-6 col-sm-6 mt-3">
-        <div class="servicebox">
-          <img src="images/home/four.png" alt="img" width="60%" />
-          <p>DIGITAL X-RAY</p>
-        </div>
+      <div class="col-lg-4 col-md-4">
+        <a href="appointment.html" target="_blank">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/health-ser5.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>Colour Doppler</h3>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-lg-1">
-        <h1></h1>
+      <div class="col-lg-4 col-md-4">
+        <a href="appointment.html" target="_blank">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/health-ser6.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>ECO/ECG/TMT</h3>
+            </div>
+          </div>
+        </a>
       </div>
+
     </div>
-    <div class="view-more my-5 d-flex justify-content-center">
-      <a href="service.html" class="more-btn">View More <i class="fa-solid fa-arrow-right"></i></a>
+    <div class="text-center bgbutton">
+      <a href="service.html" target="_blank" class=""><button type="button">View More</button></a>
     </div>
-    <!-- Home Service End -->
+
   </div>
+  <!-- Service End -->
+  <!-- Ambulance Service start -->
+  <div class="container-fluid need my-5 wow fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="scooty">
+            <img src="images/ambu.png" alt="img" width="60%">
+          </div>
+        </div>
+        <div class="col-lg-7 mt-3">
+          <h2>Free Ambulance services within<br> 5 km radius!</h2>
+
+          <div class="needpart">
+
+            <h4>@<a href="tel: +91 90439 43744">+91 90439 43744</a>/<a href="tel: +91 90438 63855">+91 90438
+                63855</a>/<a href="tel: 044-26501122">044-26501122</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Ambulance Service end -->
+
+
+  <!--Start Features Area-->
+  <div class="featured-area pt-100 pb-70 wow fadeInUp">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="feature-left-content">
+            <div class="lg-lh">
+              <h3>Features</h3>
+              <p>@ VR Scans & Labs, we understand that your health is your top priority. That's why we strive to provide
+                you with the highest quality scan and lab services possible. Here are just a few reasons why you should
+                choose us for your scans and labs need:
+              </p>
+              <a href="about.html" target="_blank" class="bgbutton"><button type="button">More About Us</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row justify-content-center style-feature-box">
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+              <div class="card single-features-card shadow">
+                <div class="icon">
+                  <img src="images/home/cho1.png" alt="" width="55px">
+                </div>
+                <h3>State-of-the-art equipment</h3>
+                <p>We use the latest cutting-edge technology and equipment to ensure our scans and labs test are
+                  accurate and reliable.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+              <div class="card single-features-card shadow">
+                <div class="icon">
+                  <img src="images/home/cho2.png" alt="" width="55px">
+                </div>
+                <h3> Expert Staff</h3>
+                <p>Our staff are experienced professionals who are dedicated to providing you with the best possible
+                  care.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+              <div class="card single-features-card shadow">
+                <div class="icon">
+                  <img src="images/home/cho3.png" alt="" width="55px">
+                </div>
+                <h3>Fast Results</h3>
+                <p>We understand that waiting for test results can be a stressful experience. That's why we strive to
+                  provide you with fast and accurate results as soon as possible.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+              <div class="card single-features-card shadow">
+                <div class="icon">
+                  <img src="images/home/cho4.png" alt="" width="55px">
+                </div>
+                <h3>Affordable Prices</h3>
+                <p>Access to high-quality healthcare services should be available to everyone, regardless of their
+                  financial situation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Features Area-->
+
+  <!-- Our Values Start -->
+  <div class="container testing">
+
+    <!--Our Values -->
+    <div class="main my-5 wow fadeInUp">
+      <h2>OUR VALUES</h2>
+      <img src="images/divider.png" alt="img" width="20%">
+      <p class="mt-3">At <b>VR Scans & Labs,</b> our values are at the core of everything we do. We believe that
+        our
+        values help us to provide the highest quality care to our patients and ensure that we are always putting
+        their needs first. Our guiding values are as follows:
+      </p>
+    </div>
+    <div class=" row wow fadeInUp">
+      <div class="col-lg-3 mt-2">
+        <div class="valuecard">
+          <div class="d-flex justify-content-center">
+            <img src="images/home/val1.png" alt="" width="20%">
+          </div>
+          <h5>Personalized Care</h5>
+          <p>We firmly believe that every patient deserves compassionate, respectful, and dignified treatment.
+            That's why we always put our patients first and strive to provide the best possible care to each
+            and every one of them.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 mt-2">
+        <div class="valuecard">
+          <div class="d-flex justify-content-center">
+            <img src="images/home/val2.png" alt="" width="20%">
+          </div>
+          <h5>Quality</h5>
+          <p>We are committed to providing the highest quality scan and lab services possible. We use the
+            latest technology and equipment, and our staff is highly trained and experienced to ensure our
+            services are accurate, reliable, and effective.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 mt-2">
+        <div class="valuecard">
+          <div class="d-flex justify-content-center">
+            <img src="images/home/val3.png" alt="" width="20%">
+          </div>
+          <h5>Integrity</h5>
+          <p>We believe in honesty, transparency, and ethical behaviour in all that we do. We consistently
+            prioritize integrity and take responsibility for our actions.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 mt-2">
+        <div class="valuecard">
+          <div class="d-flex justify-content-center">
+            <img src="images/home/val4.png" alt="" width="20%">
+          </div>
+          <h5>Teamwork</h5>
+          <p>We believe that working together is essential to providing the best possible care to our
+            patients. We foster a collaborative environment where our staff work together to provide
+            comprehensive care to our patients.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+    <P>At our Scans and Labs Centre, we are committed to upholding these values in all possible ways we do. We
+      believe
+      that by doing so, we can provide the best possible care to our patients and help them achieve their health
+      goals.</P>
+  </div>
+  <!-- our value end  -->
+
+  <!-- background start  -->
+  <br>
+  <div class="container-fluid fixbanner my-5">
+    <div class="container bgcontent">
+      <h2>“Discovering insights into inner health @ VR Scans & Labs"</h2>
+      <div class="bgbutton">
+        <a href="#contact"><button type="button">Contact</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- background end  -->
+
+  <!-- Packages Start -->
+  <div class="container">
+    <div class="main my-3 wow fadeInUp">
+      <h2>OUR PACKAGES</h2>
+      <img src="images/divider.png" alt="img" width="20%">
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-4">
+        <a href="vr_master.html">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/package-999.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>VR MASTER</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <a href="vr_master_plus.html">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/package-1999.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>VR MASTER PLUS</h3>
+              <!--<p>Your Best Online Medicine Tips</p>-->
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <a href="vr-diabetic.html">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/package-2999.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>VR DIABETIC CARE</h3>
+              <!--<p>Your Best Online Medicine Tips</p>-->
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <a href="vr_wellness.html">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/package-3999.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>VR WOMEN WELLNESS</h3>
+              <!--<p>Your Best Online Medicine Tips</p>-->
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <a href="vr_cardiac.html">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/package-4999.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>VR CARDIAC CARE</h3>
+              <!--<p>Your Best Online Medicine Tips</p>-->
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <a href="vr_screening.html">
+          <div class="single-portfolio-card">
+            <div class="portfolio-img">
+              <img src="images/new/package-5999.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="caption">
+              <h3>VR CANCER SCREENING</h3>
+              <!--<p>Your Best Online Medicine Tips</p>-->
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Packages End -->
 
   <!-- need home collect start -->
   <div class="container-fluid need my-5 wow fadeInUp">
@@ -454,351 +948,70 @@
   </div>
   <!-- need home collect end -->
 
-  <div class="container testing">
+  <!-- Home Collection Start -->
+  <section class="healthcare-section">
+    <!-- Floating Icons -->
+    <i class="fas fa-heartbeat floating-icon icon-1 fa-2x"></i>
+    <i class="fas fa-user-md floating-icon icon-2 fa-2x"></i>
+    <i class="fas fa-ambulance floating-icon icon-3 fa-2x"></i>
 
-    <!--Our Values -->
-    <div class="main my-5 wow fadeInUp">
-      <h2>OUR VALUES</h2>
-      <img src="images/divider.png" alt="img" width="20%">
-      <p class="mt-3">At <b>VR Scans & Labs,</b> our values are at the core of everything we do. We believe that
-        our
-        values help us to provide the highest quality care to our patients and ensure that we are always putting
-        their needs first. Our guiding values are as follows:
-      </p>
-    </div>
-    <div class=" row wow fadeInUp">
-      <div class="col-lg-3 mt-2">
-        <div class="valuecard">
-          <div class="d-flex justify-content-center">
-            <img src="images/home/val1.png" alt="" width="20%">
-          </div>
-          <h5>Personalized Care</h5>
-          <p>We firmly believe that every patient deserves compassionate, respectful, and dignified treatment.
-            That's why we always put our patients first and strive to provide the best possible care to each
-            and every one of them.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-3 mt-2">
-        <div class="valuecard">
-          <div class="d-flex justify-content-center">
-            <img src="images/home/val2.png" alt="" width="20%">
-          </div>
-          <h5>Quality</h5>
-          <p>We are committed to providing the highest quality scan and lab services possible. We use the
-            latest technology and equipment, and our staff is highly trained and experienced to ensure our
-            services are accurate, reliable, and effective.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-3 mt-2">
-        <div class="valuecard">
-          <div class="d-flex justify-content-center">
-            <img src="images/home/val3.png" alt="" width="20%">
-          </div>
-          <h5>Integrity</h5>
-          <p>We believe in honesty, transparency, and ethical behaviour in all that we do. We consistently
-            prioritize integrity and take responsibility for our actions.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-3 mt-2">
-        <div class="valuecard">
-          <div class="d-flex justify-content-center">
-            <img src="images/home/val4.png" alt="" width="20%">
-          </div>
-          <h5>Teamwork</h5>
-          <p>We believe that working together is essential to providing the best possible care to our
-            patients. We foster a collaborative environment where our staff work together to provide
-            comprehensive care to our patients.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-    <br>
-    <P>At our Scans and Labs Centre, we are committed to upholding these values in all possible ways we do. We
-      believe
-      that by doing so, we can provide the best possible care to our patients and help them achieve their health
-      goals.</P>
-  </div>
-
-
-  <!-- </div> -->
-  <!-- our value end  -->
-
-  <!-- background start  -->
-  <br>
-  <div class="container-fluid fixbanner my-5">
-    <div class="container bgcontent">
-      <h2>“Discovering insights into inner health @ VR Scans & Labs"</h2>
-      <div class="bgbutton">
-        <a href="#contact"><button type="button">Contact</button></a>
-      </div>
-    </div>
-  </div>
-  <!-- background end  -->
-
-
-  <!-- Packages Start -->
-  <div class="container">
-    <div class="main pt-4 wow fadeInUp">
-      <h2>OUR PACKAGES</h2>
-      <img src="images/divider.png" alt="img" width="20%">
-    </div>
-    <div class="carousel-wrapper package-wrapper">
-      <!-- Custom Left/Right Buttons -->
-      <button class="custom-nav-btn custom-prev pack-nav">
-        <i class="fa-solid fa-arrow-left"></i>
-      </button>
-      <button class="custom-nav-btn custom-next pack-nav">
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-
-      <!-- Carousel -->
-      <div class="owl-carousel owl-theme">
-        <!-- Slide 1 -->
-        <div class="item">
-          <div class="card package-card">
-            <img src="images/home-package.png" alt="Icon" class="mx-auto mb-3" />
-            <h5 class="text-uppercase fw-bold text-center">VR - MASTER</h5>
-            <small class="text-muted text-center">Includes 8 Tests</small>
-            <p class="my-2 mb-1">
-              Complete Hemogram<br>
-              Glucose-Random<br>
-              Liver Function Test<br>
-              Renal Function Test<br>
-              <span class="text-primary">+ More</span>
-            </p>
-            <h5>
-              <span class="fw-bold ms-2">Rs. 999</span>
-            </h5>
-            <a href="vr_master.html" class="more-btn bg-danger w-100 btn-sm">Know More</a>
-          </div>
-        </div>
-        <!-- Slide 2 -->
-        <div class="item">
-          <div class="card package-card">
-            <img src="images/home-package.png" alt="Icon" class="mx-auto mb-3" />
-            <h5 class="text-uppercase fw-bold text-center">VR - MASTER PLUS</h5>
-            <small class="text-muted text-center">Includes 9 Tests</small>
-            <p class="my-2 mb-1">
-              Complete Hemogram<br>
-              Glucose-Random<br>
-              Liver Function Test<br>
-              Computerised ECG<br>
-              <span class="text-primary">+ More</span>
-            </p>
-            <h5>
-              <span class="fw-bold ms-2">Rs. 1999</span>
-            </h5>
-            <a href="vr_master_plus.html" class="more-btn bg-danger w-100 btn-sm">Know More</a>
-          </div>
-        </div>
-        <!-- Slide 3 -->
-        <div class="item">
-          <div class="card package-card">
-            <img src="images/home-package.png" alt="Icon" class="mx-auto mb-3" />
-            <h5 class="text-uppercase fw-bold text-center">VR - Diabetic Care</h5>
-            <small class="text-muted text-center">Includes 9 Tests</small>
-            <p class="my-2 mb-1">
-              Complete Hemogram<br>
-              Urine routine<br>
-              Liver Function Test<br>
-              Renal Function Test<br>
-              <span class="text-primary">+ More</span>
-            </p>
-            <h5>
-              <span class="fw-bold ms-2">Rs. 2999</span>
-            </h5>
-            <a href="vr-diabetic.html" class="more-btn bg-danger w-100 btn-sm">Know More</a>
-          </div>
-        </div>
-        <!-- Slide 4 -->
-       <div class="item">
-          <div class="card package-card">
-            <img src="images/home-package.png" alt="Icon" class="mx-auto mb-3" />
-            <h5 class="text-uppercase fw-bold text-center">VR - WOMEN WELLNESS</h5>
-            <small class="text-muted text-center">Includes 9 Tests</small>
-            <p class="my-2 mb-1">
-              Complete Hemogram<br>
-              Computerised ECG<br>
-              Liver Function Test<br>
-              ++Thyroid Function Test<br>
-              <span class="text-primary">+ More</span>
-            </p>
-            <h5>
-              <span class="fw-bold ms-2">Rs. 3999</span>
-            </h5>
-            <a href="vr_wellness.html" class="more-btn bg-danger w-100 btn-sm">Know More</a>
-          </div>
-        </div>
-         <!-- Slide 5 -->
-       <div class="item">
-          <div class="card package-card">
-            <img src="images/home-package.png" alt="Icon" class="mx-auto mb-3" />
-            <h5 class="text-uppercase fw-bold text-center">VR - CARDIAC CARE</h5>
-            <small class="text-muted text-center">Includes 10 Tests</small>
-            <p class="my-2 mb-1">
-              Complete Hemogram<br>
-              Computerised ECG<br>
-              Lipid Profile<br>
-              Digital X-Ray Chest<br>
-              <span class="text-primary">+ More</span>
-            </p>
-            <h5>
-              <span class="fw-bold ms-2">Rs. 4999</span>
-            </h5>
-            <a href="vr_cardiac.html" class="more-btn bg-danger w-100 btn-sm">Know More</a>
-          </div>
-        </div>
-         <!-- Slide 6 -->
-       <div class="item">
-          <div class="card package-card">
-            <img src="images/home-package.png" alt="Icon" class="mx-auto mb-3" />
-            <h5 class="text-uppercase fw-bold text-center">VR-CANCER SCREENING</h5>
-            <small class="text-muted text-center">Includes 9 Tests</small>
-            <p class="my-2 mb-1">
-              Complete Hemogram<br>
-              CT Screening of Chest<br>
-              Renal Function Test*<br>
-              Pap Smear<br>
-              <span class="text-primary">+ More</span>
-            </p>
-            <h5>
-              <span class="fw-bold ms-2">Rs. 5999</span>
-            </h5>
-            <a href="vr_screening.html" class="more-btn bg-danger w-100 btn-sm">Know More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Packages End -->
-
-
-  <!-- why choose part start -->
-  <div class="container">
-    <div class="main pt-4 wow fadeInUp">
-      <h2>WHY CHOOSE VR SCANS & LABS?</h2>
-      <img src="images/divider.png" alt="img" width="20%">
-    </div>
-    <p class="text-center mt-4 wow fadeInUp">@ <b>VR Scans & Labs,</b> we understand that your health is your top
-      priority.
-      That's why we
-      strive to provide you with the highest quality scan and lab services possible. Here are just a few reasons
-      why you should choose us for your scans and labs need:</p>
-    <div class="row">
-      <div class="col-lg-6 wow fadeInLeft">
-        <div class="">
-
-          <h5><img src="images/home/cho1.png" alt="" width="12%"> State-of-the-art equipment</h5>
-          <p>We use the latest cutting-edge technology and equipment to ensure our scans and labs test are
-            accurate and reliable.</p>
-        </div>
-        <div class="">
-          <h5><img src="images/home/cho2.png" alt="" width="12%"> Expert Staff</h5>
-          <p>Our staff are experienced professionals who are dedicated to providing you with the best possible
-            care.</p>
-        </div>
-        <div class="">
-          <h5><img src="images/home/cho3.png" alt="" width="12%"> Fast Results</h5>
-          <p>We understand that waiting for test results can be a stressful experience. That's why we strive
-            to provide you with fast and accurate results as soon as possible.</p>
-        </div>
-        <div class="">
-          <h5><img src="images/home/cho4.png" alt="" width="12%"> Affordable Prices</h5>
-          <p>Access to high-quality healthcare services should be available to everyone, regardless of their
-            financial situation.</p>
-        </div>
-      </div>
-      <div class="col-lg-6 mt-5 wow fadeInRight">
-        <img src="images/why.png" alt="img" width="100%">
-      </div>
-    </div>
-  </div>
-  <!-- why choose part end -->
-
-
-
-  <!-- gallery area start  -->
-  <!-- <div class="container mt-5 wow fadeInUp" id="gallery">
-        <div class="main pt-4">
-            <h2>GALLERY</h2>
-            <img src="images/divider.png" alt="img" width="20%">
-        </div>
-        <br>
-       
-        <div class="swiper">
-
-            <div class="swiper-wrapper">
-             
-                <div class="swiper-slide"> <img src="images/gallery/gal1.jpg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal2.jpg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal3.jpg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal4.jpg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal5.jpeg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal6.jpeg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal7.jpeg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal8.jpeg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal9.jpeg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal10.jpeg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal11.jpeg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal12.jpeg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal13.jpeg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal14.jpeg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal15.jpg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal16.jpg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal17.jpg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal18.jpg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal19.jpg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal20.jpg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal21.jpg" alt="img" width="100%"></div>
-                <div class="swiper-slide"> <img src="images/gallery/gal22.jpg" alt="img" width="100%"></div>
-               
-                <div class="swiper-slide"><video width="100%" height="100%" controls>
-                        <source src="images/video.mp4" type="video/mp4" height="100%">
-                    </video></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev">
-                <i class="fa fa-circle-arrow-left"></i>
-            </div>
-            <div class="swiper-button-next">
-                <i class="fa fa-circle-arrow-right"></i>
-            </div>
-            <div class="swiper-scrollbar"></div>
-        </div>
-    </div> -->
-  <!-- gallery area end  -->
-
-
-
-  <!-- need home collect start -->
-  <div class="container-fluid need my-5 wow fadeInUp">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="scooty">
-            <img src="images/ambu.png" alt="img" width="60%">
+      <div class="row align-items-center">
+        <!-- Left Side - Image -->
+        <div class="col-lg-6">
+          <div class="home-collection-img p-2 wow fadeInLeft" data-wow-delay="0.2s">
+            <img src="images/new/Home_Collection.jpg" alt="Healthcare Home Collection" class="img-fluid">
           </div>
         </div>
-        <div class="col-lg-7 mt-3">
-          <h2>Free Ambulance services within<br> 5 km radius!</h2>
 
-          <div class="needpart">
+        <!-- Right Side - Content -->
+        <div class="col-lg-6">
+          <div class="healthcare-content wow fadeInRight" data-wow-delay="0.4s">
 
-            <h4>@<a href="tel: +91 90439 43744">+91 90439 43744</a>/<a href="tel: +91 90438 63855">+91 90438
-                63855</a>/<a href="tel: 044-26501122">044-26501122</a>
-            </h4>
+            <div class="feature-left-content">
+              <div class="">
+                <h3>Why Choose Home Collection?</h3>
+                <p class="text-muted lh-lg">Experience the convenience and safety of professional healthcare services
+                  delivered
+                  right to your doorstep. Our home collection service transforms your healthcare
+                  experience with unmatched comfort and reliability.</p>
+              </div>
+
+              <!-- Improved List Design -->
+              <div class="demo-section">
+                <div class="demo-title">Option 1: Check Circle Icons (Green)</div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul class="list-check">
+                      <li>Comfort & Convenience</li>
+                      <li>Time Saving</li>
+                      <li>No travel required</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="list-check">
+                      <li>Family Friendly</li>
+                      <li>Professional Care</li>
+                      <li>Digital Experience</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="tel:+919043943744">
+              <button class="cta-button">
+                <i class="fas fa-calendar-check me-2"></i>
+                Book your test now
+              </button></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- need home collect end -->
+  </section>
+
+  <!-- Home Collection End -->
 
 
   <!-- Testimonial Start -->
@@ -1062,6 +1275,63 @@
   <!-- Carousel wrapper -->
   <!-- Testimonial End -->
 
+  <!-- Contact start -->
+  <div class="container-xxl py-5 wow zoomIn" id="contact">
+    <div class="container">
+      <div class="text-center mb-3 head wow fadeInUp" data-wow-delay="0.1s">
+        <h2 class="text-center">Contact Us</h2>
+        <img src="images/divider.png" class="img-fluid d-block mx-auto pb-2" alt="img" width="14%">
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.1s">
+          <iframe class="position-relative rounded w-100 h-100"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.659324869762!2d80.19793649416505!3d13.120755156271025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52653a6887d5d9%3A0xf67a208b168d6599!2sVR%20SCANS%20and%20LABS!5e0!3m2!1sen!2sin!4v1736760567670!5m2!1sen!2sin"
+            frameborder="0" style="min-height: 350px; border: 0" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+        <div class="col-md-6">
+          <div class="wow fadeInRight" data-wow-delay="0.2s">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" />
+                    <label for="name">Your Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" />
+                    <label for="email">Your Email</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="number" class="form-control" id="subject" name="subject" placeholder="Phone Number" />
+                    <label for="subject">Phone Number</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message"
+                      style="height: 150px"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn button submit w-100 py-3 text-white" type="submit" onclick="sendDataToWhatsApp()">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact end -->
+
 
   <!-- footer area start  -->
   <div class="container-fluid footer wow fadeInUp">
@@ -1078,9 +1348,9 @@
           </p>
         </a>
         <!-- <p class="text-justify mt-2">Looking for accurate and reliable scan and lab services? Look no further!
-                    Our state-of-the-art facility offers a wide range of services, from routine blood tests to complex
-                    imaging scans. Make an appointment now to see the difference for yourself!
-                </p> -->
+                  Our state-of-the-art facility offers a wide range of services, from routine blood tests to complex
+                  imaging scans. Make an appointment now to see the difference for yourself!
+              </p> -->
         <div class="footnum">
           <h6><a href="tel:+91 9043943744">+91 9043943744</a></h6>
           <h6><a href="tel:+91 9043863855">+91 9043863855</a></h6>
@@ -1112,8 +1382,8 @@
             <li><i class="fa-brands fa-instagram"></i> vr_scans_and_labs</li>
           </a>
           <!-- <a href="">
-                        <li><i class="fa-brands fa-x-twitter"></i></li>
-                    </a> -->
+                      <li><i class="fa-brands fa-x-twitter"></i></li>
+                  </a> -->
           <a href="https://www.google.com/search?kgmid=/g/11krypw592&hl=en-IN&q=VR+SCANS+AND+LABS&kgs=bbae3eb32a9e74f9&shndl=30&shem=lose&source=sh/x/kp/osrp/m5/2"
             target="_blank">
             <li><i class="fa-brands fa-google"></i> VR SCANS AND LABS</li>
@@ -1330,6 +1600,8 @@
       });
     });
   </script>
+
+
 
 </body>
 

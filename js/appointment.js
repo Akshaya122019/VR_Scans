@@ -23,3 +23,25 @@
   // Open WhatsApp with pre-filled message
   window.open(whatsappUrl, '_blank');
 });
+
+
+
+//contact
+function sendDataToWhatsApp() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    if (!name || !email || !phone || !message) {
+        alert('Please fill out all fields.');
+        return;
+    }
+
+    const whatsappMessage = `Name: ${name}\nEmail: ${email}\nPhoneNumber: ${phone}\nMessage: ${message}`;
+    const whatsappNumber = '9043863855';
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappUrl, '_blank');
+    alert('Your message has been sucessfully sent');
+}

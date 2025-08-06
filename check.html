@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique List Styles</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Option 1: Check Circle Icons */
+        .list-check {
+            list-style: none;
+            padding: 0;
+        }
+        .list-check li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .list-check li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-size: 1.1rem;
+        }
+
+        /* Option 2: Arrow Right */
+        .list-arrow {
+            list-style: none;
+            padding: 0;
+        }
+        .list-arrow li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .list-arrow li::before {
+            content: '\f061';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-size: 0.9rem;
+        }
+
+        /* Option 3: Plus Icons */
+        .list-plus {
+            list-style: none;
+            padding: 0;
+        }
+        .list-plus li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .list-plus li::before {
+            content: '\f067';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #f39c12;
+            font-size: 0.8rem;
+        }
+
+        /* Option 4: Heart Icons */
+        .list-heart {
+            list-style: none;
+            padding: 0;
+        }
+        .list-heart li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .list-heart li::before {
+            content: '\f004';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-size: 1rem;
+        }
+
+        /* Option 5: Star Icons */
+        .list-star {
+            list-style: none;
+            padding: 0;
+        }
+        .list-star li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .list-star li::before {
+            content: '\f005';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #f39c12;
+            font-size: 0.9rem;
+        }
+
+        /* Option 6: Medical Cross */
+        .list-medical {
+            list-style: none;
+            padding: 0;
+        }
+        .list-medical li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .list-medical li::before {
+            content: '\f0fa';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-size: 0.9rem;
+        }
+
+        /* Demo styling */
+        .demo-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .demo-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-md-6 {
+            flex: 0 0 50%;
+            padding: 0 15px;
+        }
+        @media (max-width: 768px) {
+            .col-md-6 {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Option 1: Check Circle (Recommended for Healthcare) -->
+    <div class="demo-section">
+        <div class="demo-title">Option 1: Check Circle Icons (Green)</div>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-check">
+                    <li>Comfort & Convenience</li>
+                    <li>Time Saving</li>
+                    <li>No travel required</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-check">
+                    <li>Family Friendly</li>
+                    <li>Professional Care</li>
+                    <li>Digital Experience</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 2: Arrow Right -->
+    <div class="demo-section">
+        <div class="demo-title">Option 2: Arrow Right Icons (Red)</div>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-arrow">
+                    <li>Comfort & Convenience</li>
+                    <li>Time Saving</li>
+                    <li>No travel required</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-arrow">
+                    <li>Family Friendly</li>
+                    <li>Professional Care</li>
+                    <li>Digital Experience</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 3: Plus Icons -->
+    <div class="demo-section">
+        <div class="demo-title">Option 3: Plus Icons (Orange)</div>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-plus">
+                    <li>Comfort & Convenience</li>
+                    <li>Time Saving</li>
+                    <li>No travel required</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-plus">
+                    <li>Family Friendly</li>
+                    <li>Professional Care</li>
+                    <li>Digital Experience</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 4: Heart Icons -->
+    <div class="demo-section">
+        <div class="demo-title">Option 4: Heart Icons (Red)</div>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-heart">
+                    <li>Comfort & Convenience</li>
+                    <li>Time Saving</li>
+                    <li>No travel required</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-heart">
+                    <li>Family Friendly</li>
+                    <li>Professional Care</li>
+                    <li>Digital Experience</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 5: Star Icons -->
+    <div class="demo-section">
+        <div class="demo-title">Option 5: Star Icons (Orange)</div>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-star">
+                    <li>Comfort & Convenience</li>
+                    <li>Time Saving</li>
+                    <li>No travel required</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-star">
+                    <li>Family Friendly</li>
+                    <li>Professional Care</li>
+                    <li>Digital Experience</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 6: Medical Cross -->
+    <div class="demo-section">
+        <div class="demo-title">Option 6: Medical Cross Icons (Red) - Perfect for Healthcare</div>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-medical">
+                    <li>Comfort & Convenience</li>
+                    <li>Time Saving</li>
+                    <li>No travel required</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-medical">
+                    <li>Family Friendly</li>
+                    <li>Professional Care</li>
+                    <li>Digital Experience</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding: 20px; background: #e8f5e8; border-radius: 10px; margin-top: 30px;">
+        <h3 style="color: #27ae60; margin-bottom: 15px;">How to Use:</h3>
+        <p style="margin-bottom: 10px;"><strong>Just replace your existing &lt;ul&gt; class with any of these:</strong></p>
+        <ul style="margin: 0; padding-left: 20px;">
+            <li><code>class="list-check"</code> - Green checkmarks (recommended)</li>
+            <li><code>class="list-arrow"</code> - Red arrows</li>
+            <li><code>class="list-plus"</code> - Orange plus signs</li>
+            <li><code>class="list-heart"</code> - Red hearts</li>
+            <li><code>class="list-star"</code> - Orange stars</li>
+            <li><code>class="list-medical"</code> - Red medical cross (best for healthcare)</li>
+        </ul>
+    </div>
+</body>
+</html>
